@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/cream"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulasiModelActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="249dp"
+        android:layout_height="70dp"
+        android:background="@color/ungu"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATASET"
+            android:textAlignment="center"
+            android:textColor="@color/cream"
+            android:textSize="28dp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/biru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Dataset ini saya ambil dari kaggle dengan penjelasan kumpulan data diunduh dari Repositori Pembelajaran Mesin UCI. Kedua kumpulan data tersebut terkait dengan varian merah dan putih anggur Portugis Vinho Verde. Referensi [Cortez dkk., 2009]. Karena masalah privasi dan logistik, hanya variabel fisikokimia (input) dan sensorik (output) yang tersedia (misalnya, tidak ada data tentang jenis anggur, merek anggur, harga jual anggur, dll.). Kumpulan data ini dapat dilihat sebagai tugas klasifikasi atau regresi. Kelas-kelasnya teratur dan tidak seimbang (misalnya, ada lebih banyak anggur normal daripada anggur berkualitas baik atau buruk). Algoritme deteksi outlier dapat digunakan untuk mendeteksi beberapa wine yang unggul atau buruk. Selain itu, kami tidak yakin apakah semua variabel masukan relevan. Jadi mungkin menarik untuk menguji metode pemilihan fitur. Dua kumpulan data digabungkan dan beberapa nilai dihapus secara acak."
+            android:textAlignment="textStart"
+            android:textColor="@color/cream"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/biru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardview1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Dataset ini memiliki 11 fitur dan 1 label dan terdiri dari 6463 data"
+            android:textAlignment="textStart"
+            android:textColor="@color/cream"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
